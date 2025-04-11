@@ -69,13 +69,13 @@
   <tr>
       <td align="center"><a href="topics/terraform/README.md"><img src="images/terraform.png" width="75px;" height="75px;" alt="Terraform"/><br /><b>Terraform</b></a></td>
       <td align="center"><a href="#puppet"><img src="images/puppet.png" width="75px;" height="75px;" alt="puppet"/><br /><b>Puppet</b></a></td>
-      <td align="center"><a href="#distributed"><img src="images/distributed.png" width="75px;" height="75px;" alt="Distributed"/><br /><b>Distributed</b></a></td>
-      <td align="center"><a href="#questions-you-ask"><img src="images/you.png" width="75px;" height="75px;" alt="you"/><br /><b>Questions you can ask</b></a></td>
+      <td align="center"><a href="#distributed"><img src="images/distributed.png" width="75px;" height="75px;" alt="Распределённые вычисления"/><br /><b>Распределённые вычисления</b></a></td>
+      <td align="center"><a href="#questions-you-ask"><img src="images/you.png" width="75px;" height="75px;" alt="you"/><br /><b>Вопросы, которые ВЫ МОЖЕТЕ задать (во время интервью)</b></a></td>
       <td align="center"><a href="topics/ansible/README.md"><img src="images/ansible.png" width="75px;" height="75px;" alt="ansible"/><br /><b>Ansible</b></a></td>
   </tr>
 
   <tr>
-      <td align="center"><a href="topics/observability/README.md"><img src="images/observability.png" width="75px;" height="75px;" alt="observability"/><br /><b>Observability</b></a></td>
+      <td align="center"><a href="topics/observability/README.md"><img src="images/observability.png" width="75px;" height="75px;" alt="Аналитика внутренней системы по ее внешним аспектам"/><br /><b>Аналитика внутренней системы по ее внешним аспектам</b></a></td>
       <td align="center"><a href="#prometheus"><img src="images/prometheus.png" width="75px;" height="75px;" alt="Prometheus"/><br /><b>Prometheus</b></a></td>
       <td align="center"><a href="topics/circleci/README.md"><img src="images/logos/circleci.png" width="70px;" height="70px;" alt="Circle CI"/><br /><b>Circle CI</b></a></td>
       <td align="center"><a href="topics/datadog/README.md"><img src="images/logos/datadog.png" width="80px;" height="80px;" alt="DataDog"/><br /><b></b></a></td>
@@ -84,14 +84,14 @@
 
   <tr>
     <td align="center"><a href="topics/argo/README.md"><img src="images/logos/argo.png" width="80px;" height="80px;" alt="Argo"/><br /><b>Argo</b></a></td>
-    <td align="center"><a href="topics/soft_skills/README.md"><img src="images/HR.png" width="75px;" height="75px;" alt="HR"/><br /><b>Soft Skills</b></a></td>
-    <td align="center"><a href="topics/security/README.md"><img src="images/security.png" width="75px;" height="75px;" alt="security"/><br /><b>Security</b></a></td>
-    <td align="center"><a href="#system-design"><img src="images/design.png" width="75px;" height="75px;" alt="Design"/><br /><b>System Design</b></a></td>
+    <td align="center"><a href="topics/soft_skills/README.md"><img src="images/HR.png" width="75px;" height="75px;" alt="HR"/><br /><b>Гибкие навыки</b></a></td>
+    <td align="center"><a href="topics/security/README.md"><img src="images/security.png" width="75px;" height="75px;" alt="Безопасность"/><br /><b>Безопасность</b></a></td>
+    <td align="center"><a href="#system-design"><img src="images/design.png" width="75px;" height="75px;" alt="Системный дизайн"/><br /><b>Системный дизайн</b></a></td>
    </tr>
 
    <tr>
-    <td align="center"><a href="topics/chaos_engineering/README.md"><img src="images/logos/chaos_engineering.png" width="75px;" height="75px;" alt="Chaos Engineering"/><br /><b>Chaos Engineering</b></a></td>
-    <td align="center"><a href="#Misc"><img src="images/general.png" width="75px;" height="75px;" alt="Misc"/><br /><b>Misc</b></a></td>
+    <td align="center"><a href="topics/chaos_engineering/README.md"><img src="images/logos/chaos_engineering.png" width="75px;" height="75px;" alt="Инженерия Хаоса"/><br /><b>Инженерия Хаоса</b></a></td>
+    <td align="center"><a href="#Misc"><img src="images/general.png" width="75px;" height="75px;" alt="Прочее"/><br /><b>Прочее</b></a></td>
     <td align="center"><a href="#elastic"><img src="images/elastic.png" width="75px;" height="75px;" alt="Elastic"/><br /><b>Elastic</b></a></td>
     <td align="center"><a href="topics/kafka/README.md"><img src="images/logos/kafka.png" width="85px;" height="80px;" alt="Kafka"/><br /><b>Kafka</b></a></td>
     <td align="center"><a href="topics/node/node_questions_basic.md"><img src="images/nodejs.png" width="85px;" height="80px;" alt="NodeJs"/><br /><b>NodeJs</b></a></td>
@@ -103,7 +103,7 @@
 <!-- prettier-ignore-end -->
 <!-- ALL-TOPICS-LIST:END -->
 
-## DevOps Applications
+## DevOps приложения
 
 <table>
 <tr>
