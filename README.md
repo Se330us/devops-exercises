@@ -78,7 +78,7 @@
       <td align="center"><a href="topics/observability/README.md"><img src="images/observability.png" width="75px;" height="75px;" alt="Аналитика внутренней системы по ее внешним аспектам"/><br /><b>Аналитика внутренней системы по ее внешним аспектам</b></a></td>
       <td align="center"><a href="#prometheus"><img src="images/prometheus.png" width="75px;" height="75px;" alt="Prometheus"/><br /><b>Prometheus</b></a></td>
       <td align="center"><a href="topics/circleci/README.md"><img src="images/logos/circleci.png" width="70px;" height="70px;" alt="Circle CI"/><br /><b>Circle CI</b></a></td>
-      <td align="center"><a href="topics/datadog/README.md"><img src="images/logos/datadog.png" width="80px;" height="80px;" alt="DataDog"/><br /><b></b></a></td>
+      <td align="center"><a href="topics/datadog/README.md"><img src="images/logos/datadog.png" width="80px;" height="80px;" alt="DataDog"/><br /><b>DataDog</b></a></td>
       <td align="center"><a href="topics/grafana/README.md"><img src="images/logos/grafana.png" width="80px;" height="80px;" alt="Grafana"/><br /><b>Grafana</b></a></td>
   </tr>
 
