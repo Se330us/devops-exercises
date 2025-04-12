@@ -114,66 +114,66 @@
 </table>
 
 
-## Network
+## Сети
 
 <details>
-<summary>In general, what do you need in order to communicate?</summary><br><b>
+<summary>Что вам нужно для общения?</summary><br><b>
 
-  - A common language (for the two ends to understand)
-  - A way to address who you want to communicate with
-  - A Connection (so the content of the communication can reach the recipients)
+  - Язык, который будет понятным для двух сторон.
+  - Метод, которым будет донесена информация.
+  - Соединение (для того, чтоб информация дошла)
 
 </b></details>
 
 <details>
-<summary>What is TCP/IP?</summary><br><b>
+<summary>Что такое TCP/IP?</summary><br><b>
 
-A set of protocols that define how two or more devices can communicate with each other.
+Набор протоколов, которые определяют, как два или более устройства могут взаимодействовать друг с другом.
 
-To learn more about TCP/IP, read [here](http://www.penguintutor.com/linux/basic-network-reference)
-
-</b></details>
-
-<details>
-<summary>What is Ethernet?</summary><br><b>
-
-Ethernet simply refers to the most common type of Local Area Network (LAN) used today. A LAN—in contrast to a WAN (Wide Area Network), which spans a larger geographical area—is a connected network of computers in a small area, like your office, college campus, or even home.
+Чтобы узнать больше о TCP/IP, жмакни [тут](http://www.penguintutor.com/linux/basic-network-reference)
 
 </b></details>
 
 <details>
-<summary>What is a MAC address? What is it used for?</summary><br><b>
+<summary>Что такое Ethernet?</summary><br><b>
 
-A MAC address is a unique identification number or code used to identify individual devices on the network.
-
-Packets that are sent on the ethernet are always coming from a MAC address and sent to a MAC address. If a network adapter is receiving a packet, it is comparing the packet’s destination MAC address to the adapter’s own MAC address.
+Ethernet - это просто наиболее распространенный тип локальной сети (LAN), используемый на сегодняшний день. Локальная сеть, в отличие от глобальной сети (WAN), которая охватывает большую географическую область, — это подключенная сеть компьютеров на небольшой территории, например, в вашем офисе, университете или даже дома.
 
 </b></details>
 
 <details>
-<summary>When is this MAC address used?: ff:ff:ff:ff:ff:ff</summary><br><b>
+<summary>Что такое MAC адрес? Для чего он нужен?</summary><br><b>
 
-When a device sends a packet to the broadcast MAC address (FF:FF:FF:FF:FF:FF​), it is delivered to all stations on the local network. Ethernet broadcasts are used to resolve IP addresses to MAC addresses (by ARP) at the data link layer.
+MAC-адрес - это уникальный идентификационный номер или код, используемый для идентификации отдельных устройств в сети.
+
+Пакеты, отправляемые по сети Ethernet, всегда поступают с MAC-адреса и отправляются на MAC-адрес. Если сетевой адаптер получает пакет, он сравнивает MAC-адрес получателя пакета с собственным MAC-адресом адаптера.
+
 </b></details>
 
 <details>
-<summary>What is an IP address?</summary><br><b>
+<summary>Когда используется этот МАС адрес?: ff:ff:ff:ff:ff:ff</summary><br><b>
 
-An Internet Protocol address (IP address) is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication.An IP address serves two main functions: host or network interface identification and location addressing.
+Когда устройство отправляет пакет на широковещательный MAC-адрес (FF:FF:FF:FF:FF:FF:FF), он доставляется на все станции локальной сети. Широковещательные передачи Ethernet используются для преобразования IP-адресов в MAC-адреса (по протоколу ARP) на канальном уровне передачи данных.
 </b></details>
 
 <details>
-<summary>Explain the subnet mask and give an example</summary><br><b>
+<summary>Что такое IP адрес?</summary><br><b>
 
-A Subnet mask is a 32-bit number that masks an IP address and divides the IP addresses into network addresses and host addresses. Subnet Mask is made by setting network bits to all "1"s and setting host bits to all "0"s. Within a given network, out of the total usable host addresses, two are always reserved for specific purposes and cannot be allocated to any host. These are the first address, which is reserved as a network address (a.k.a network ID), and the last address used for network broadcast.
+Адрес Интернет-протокола (IP-адрес) - это цифровая метка, присваиваемая каждому устройству, подключенному к компьютерной сети, использующей Интернет-протокол для связи. IP-адрес выполняет две основные функции: идентификация хоста (или сетевого интерфейса) и адресация местоположения.
+</b></details>
+
+<details>
+<summary>Объясните маску подсети и приведите пример</summary><br><b>
+
+Маска подсети - это 32-разрядное число, которое маскирует IP-адрес и делит IP-адреса на сетевые адреса и адреса хоста. Маска подсети создается путем установки сетевых битов на все "1" и битов хоста на все "0". В данной сети из общего числа используемых адресов хостов два всегда зарезервированы для определенных целей и не могут быть выделены какому-либо хосту. Это первый адрес, который зарезервирован как сетевой адрес (он же сетевой идентификатор), и последний адрес, используемый для широковещательной передачи по сети.
 
 [Example](https://github.com/philemonnwanne/projects/tree/main/exercises/exe-09)
 
 </b></details>
 
 <details>
-<summary>What is a private IP address? In which scenarios/system designs, one should use it?</summary><br><b>
-Private IP addresses are assigned to the hosts in the same network to communicate with one another. As the name "private" suggests, the devices having the private IP addresses assigned can't be reached by the devices from any external network. For example, if I am living in a hostel and I want my hostel mates to join the game server I have hosted, I will ask them to join via my server's private IP address, since the network is local to the hostel.
+<summary>Что такое частный IP-адрес? В каких сценариях/системах его следует использовать?</summary><br><b>
+Частные IP-адреса назначаются хостам в одной сети для связи друг с другом. Как следует из названия "частные", устройства, которым назначены частные IP-адреса, не могут быть доступны ни из какой внешней сети. Например, если я живу в хостеле и хочу, чтобы мои товарищи по хостелу подключились к игровому серверу, который я разместил, я попрошу их присоединиться через личный IP-адрес моего сервера, поскольку сеть является локальной для хостела.
 </b></details>
 
 <details>
