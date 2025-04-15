@@ -256,227 +256,219 @@ CSMA/CD расшифровывается как Carrier Sense Multiple Access / 
 </b></details>
 
 <details>
-<summary>What is a "Collision Domain"?</summary><br><b>
-A collision domain is a network segment in which devices can potentially interfere with each other by attempting to transmit data at the same time. When two devices transmit data at the same time, it can cause a collision, resulting in lost or corrupted data. In a collision domain, all devices share the same bandwidth, and any device can potentially interfere with the transmission of data by other devices.
+<summary>Что такое "Коллизионный домен"?</summary><br><b>
+Коллизионный домен - это сегмент сети, в котором устройства потенциально могут создавать помехи друг другу, пытаясь передавать данные одновременно. Когда два устройства передают данные одновременно, это может привести к коллизии, что приведет к потере или повреждению данных. В коллизионном домене все устройства используют одну и ту же полосу пропускания, и любое устройство потенциально может создавать помехи для передачи данных другими устройствами.
 </b></details>
 
 <details>
-<summary>What is a "Broadcast Domain"?</summary><br><b>
-A broadcast domain is a network segment in which all devices can communicate with each other by sending broadcast messages. A broadcast message is a message that is sent to all devices in a network rather than a specific device. In a broadcast domain, all devices can receive and process broadcast messages, regardless of whether the message was intended for them or not.
+<summary>Что такое "широковещательный домен"?</summary><br><b>
+Широковещательный домен - это сегмент сети, в котором все устройства могут взаимодействовать друг с другом, отправляя широковещательные сообщения. Широковещательное сообщение - это сообщение, которое отправляется всем устройствам в сети, а не конкретному устройству. В широковещательном домене все устройства могут получать и обрабатывать широковещательные сообщения, независимо от того, предназначалось ли им это сообщение или нет.
 </b></details>
 
 <details>
-<summary>three computers connected to a switch. How many collision domains are there? How many broadcast domains?</summary><br><b>
+<summary>Три компьютера подключены к коммутатору. Сколько всего при этом коллизионных доменов? Сколько широковещательных доменов?</summary><br><b>
 
-Three collision domains and one broadcast domain
+Три коллизийных домена и один широковещательный.
 </b></details>
 
 <details>
-<summary>How does a router work?</summary><br><b>
+<summary>Как работает роутер(маршрутизатор)?</summary><br><b>
 
-A router is a physical or virtual appliance that passes information between two or more packet-switched computer networks. A router inspects a given data packet's destination Internet Protocol address (IP address), calculates the best way for it to reach its destination, and then forwards it accordingly.
-
-</b></details>
-
-<details>
-<summary>What is NAT?</summary><br><b>
-
- Network Address Translation (NAT) is a process in which one or more local IP addresses are translated into one or more Global IP address and vice versa in order to provide Internet access to the local hosts.
+Маршрутизатор - это физическое или виртуальное устройство, которое передает информацию между двумя или более компьютерными сетями с коммутацией пакетов. Маршрутизатор проверяет адрес интернет-протокола назначения (IP-адрес) данного пакета данных, вычисляет наилучший способ его доставки к месту назначения и затем соответствующим образом пересылает его.
 
 </b></details>
 
 <details>
-<summary>What is a proxy? How does it work? What do we need it for?</summary><br><b>
+<summary>Что такое NAT?</summary><br><b>
 
-A proxy server acts as a gateway between you and the internet. It’s an intermediary server separating end users from the websites they browse.
+ Преобразование сетевых адресов (NAT) - это процесс, при котором один или несколько локальных IP-адресов преобразуются в один или несколько глобальных IP-адресов и наоборот, чтобы обеспечить доступ в Интернет для локальных хостов.
 
-If you’re using a proxy server, internet traffic flows through the proxy server on its way to the address you requested. The request then comes back through that same proxy server (there are exceptions to this rule), and then the proxy server forwards the data received from the website to you.
-
-Proxy servers provide varying levels of functionality, security, and privacy depending on your use case, needs, or company policy.
 </b></details>
 
 <details>
-<summary>What is TCP? How does it work? What is the 3-way handshake?</summary><br><b>
+<summary>Что такое прокси-сервер? Как он работает? Для чего он нам нужен?</summary><br><b>
 
-TCP 3-way handshake or three-way handshake is a process that is used in a TCP/IP network to make a connection between server and client.
+Прокси-сервер действует как шлюз между вами и Интернетом. Это сервер-посредник, отделяющий конечных пользователей от веб-сайтов, которые они просматривают.
 
-A three-way handshake is primarily used to create a TCP socket connection. It works when:
+Если вы используете прокси-сервер, интернет-трафик проходит через прокси-сервер по пути к запрошенному вами адресу. Затем запрос возвращается через тот же прокси-сервер (из этого правила есть исключения), и затем прокси-сервер пересылает вам данные, полученные с веб-сайта.
 
-- A client node sends an SYN data packet over an IP network to a server on the same or an external network. The objective of this packet is to ask/infer if the server is open for new connections.
-- The target server must have open ports that can accept and initiate new connections. When the server receives the SYN packet from the client node, it responds and returns a confirmation receipt – the ACK packet or SYN/ACK packet.
-- The client node receives the SYN/ACK from the server and responds with an ACK packet.
+Прокси-серверы обеспечивают различные уровни функциональности, безопасности и конфиденциальности в зависимости от вашего варианта использования, потребностей или политики компании.
 </b></details>
 
 <details>
-<summary>What is round-trip delay or round-trip time?</summary><br><b>
+<summary>Что такое TCP? Как это работает? Что такое трехсторонний "хендшейк"?</summary><br><b>
 
-From [wikipedia](https://en.wikipedia.org/wiki/Round-trip_delay): "the length of time it takes for a signal to be sent plus the length of time it takes for an acknowledgment of that signal to be received"
+Трехсторонний "хендшейк" по протоколу TCP - это процесс, который используется в сети TCP/IP для установления соединения между сервером и клиентом.
 
-Bonus question: what is the RTT of LAN?
+Трехсторонний "хендшейк", в основном, используется для создания соединения по сокету TCP. Это работает, когда:
+
+- Клиентский узел отправляет пакет данных SYN по IP-сети на сервер в той же или внешней сети. Цель этого пакета - запросить/определить, открыт ли сервер для новых подключений.
+- Целевой сервер должен иметь открытые порты, которые могут принимать и инициировать новые подключения. Когда сервер получает SYN–пакет от клиентского узла, он отвечает и возвращает подтверждение получения - ACK-пакет или SYN/ACK-пакет.
+- Клиентский узел получает SYN/ACK от сервера и отвечает пакетом ACK.
 </b></details>
 
 <details>
-<summary>How does an SSL handshake work?</summary><br><b>
-SSL handshake is a process that establishes a secure connection between a client and a server.
+<summary>Что такое задержка в пути туда и обратно или время в пути туда и обратно? (RTT - Round Trip Time)</summary><br><b>
 
-1. The client sends a Client Hello message to the server, which includes the client's version of the SSL/TLS protocol, a list of the cryptographic algorithms supported by the client, and a random value.
-2. The server responds with a Server Hello message, which includes the server's version of the SSL/TLS protocol, a random value, and a session ID.
-3. The server sends a Certificate message, which contains the server's certificate.
-4. The server sends a Server Hello Done message, which indicates that the server is done sending messages for the Server Hello phase.
-5. The client sends a Client Key Exchange message, which contains the client's public key.
-6. The client sends a Change Cipher Spec message, which notifies the server that the client is about to send a message encrypted with the new cipher spec.
-7. The client sends an Encrypted Handshake Message, which contains the pre-master secret encrypted with the server's public key.
-8. The server sends a Change Cipher Spec message, which notifies the client that the server is about to send a message encrypted with the new cipher spec.
-9. The server sends an Encrypted Handshake Message, which contains the pre-master secret encrypted with the client's public key.
-10. The client and server can now exchange application data.
+Это время, необходимое для отправки сигнала, плюс время, необходимое для подтверждения получения этого сигнала.
 </b></details>
 
 <details>
-<summary>What is the difference between TCP and UDP?</summary><br><b>
+<summary>Как работает SSL "хендшейк"?</summary><br><b>
+Хендшейк по протоколу SSL - это процесс, который устанавливает безопасное соединение между клиентом и сервером.
 
-TCP establishes a connection between the client and the server to guarantee the order of the packages, on the other hand, UDP does not establish a connection between the client and server and doesn't handle package orders. This makes UDP more lightweight than TCP and a perfect candidate for services like streaming.
-
-[Penguintutor.com](http://www.penguintutor.com/linux/basic-network-reference) provides a good explanation.
+1. Клиент отправляет на сервер приветственное сообщение, содержащее клиентскую версию протокола SSL/TLS, список криптографических алгоритмов, поддерживаемых клиентом, и случайное значение.
+2. Сервер отправляет в ответ сообщение Server Hello, в котором указывается серверная версия протокола SSL/TLS, случайное значение и идентификатор сеанса.
+3. Сервер отправляет сообщение Certificate, содержащее сертификат сервера.
+4. Сервер отправляет сообщение Server Hello Done, которое указывает на то, что сервер завершил отправку сообщений для фазы приветствия сервера.
+5. Клиент отправляет сообщение Client Key Exchange, содержащее открытый ключ клиента.
+6. Клиент отправляет сообщение об изменении спецификации шифра, которое уведомляет сервер о том, что клиент собирается отправить сообщение, зашифрованное с использованием новой спецификации шифра.
+7. Клиент отправляет зашифрованное сообщение о подтверждении связи, содержащее секретный код, используемый до получения мастер-кода.
 </b></details>
 
 <details>
-<summary>What TCP/IP protocols are you familiar with?</summary><br><b>
+<summary>В чем разница между TCP и UDP?</summary><br><b>
+
+TCP устанавливает соединение между клиентом и сервером, чтобы гарантировать порядок отправки пакетов, с другой стороны, UDP не устанавливает соединение между клиентом и сервером и не обрабатывает порядок отправки пакетов. Это делает UDP более легким, чем TCP, и идеальным вариантом для таких сервисов, как потоковая передача.
 </b></details>
 
 <details>
-<summary>Explain the "default gateway"</summary><br><b>
-
-A default gateway serves as an access point or IP router that a networked computer uses to send information to a computer in another network or the internet.
+<summary>С какими протоколами TCP/IP вы знакомы?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is ARP? How does it work?</summary><br><b>
+<summary>Объясните, что такое "шлюз по умолчанию".</summary><br><b>
 
-ARP stands for Address Resolution Protocol. When you try to ping an IP address on your local network, say 192.168.1.1, your system has to turn the IP address 192.168.1.1 into a MAC address. This involves using ARP to resolve the address, hence its name.
-
-Systems keep an ARP look-up table where they store information about what IP addresses are associated with what MAC addresses. When trying to send a packet to an IP address, the system will first consult this table to see if it already knows the MAC address. If there is a value cached, ARP is not used.
+Шлюз по умолчанию служит точкой доступа или IP-маршрутизатором, который сетевой компьютер использует для отправки информации на компьютер в другой сети или через Интернет.
 </b></details>
 
 <details>
-<summary>What is TTL? What does it help to prevent?</summary><br><b>
+<summary>Что такое ARP? Как это работает?</summary><br><b>
 
-- TTL (Time to Live) is a value in an IP (Internet Protocol) packet that determines how many hops or routers a packet can travel before it is discarded. Each time a packet is forwarded by a router, the TTL value is decreased by one. When the TTL value reaches zero, the packet is dropped, and an ICMP (Internet Control Message Protocol) message is sent back to the sender indicating that the packet has expired.
-- TTL is used to prevent packets from circulating indefinitely in the network, which can cause congestion and degrade network performance.
-- It also helps to prevent packets from being trapped in routing loops, where packets continuously travel between the same set of routers without ever reaching their destination.
-- In addition, TTL can be used to help detect and prevent IP spoofing attacks, where an attacker attempts to impersonate another device on the network by using a false or fake IP address. By limiting the number of hops that a packet can travel, TTL can help prevent packets from being routed to destinations that are not legitimate.
+ARP расшифровывается как Address Resolution Protocol. Когда вы пытаетесь пропинговать IP-адрес в своей локальной сети, скажем, 192.168.1.1, ваша система должна преобразовать IP-адрес 192.168.1.1 в MAC-адрес. Для определения адреса используется протокол ARP, отсюда и его название.
+
+В системах существует таблица поиска ARP, в которой хранится информация о том, какие IP-адреса связаны с какими MAC-адресами. При попытке отправить пакет на IP-адрес система сначала обратится к этой таблице, чтобы узнать, известен ли ей MAC-адрес. Если есть кэшированное значение, ARP не используется.
 </b></details>
 
 <details>
-<summary>What is DHCP? How does it work?</summary><br><b>
+<summary>Что такое TTL? Что он помогает предотвратить?</summary><br><b>
 
-It stands for Dynamic Host Configuration Protocol and allocates IP addresses, subnet masks, and gateways to hosts. This is how it works:
-
-* A host upon entering a network broadcasts a message in search of a DHCP server (DHCP DISCOVER)
-* An offer message is sent back by the DHCP server as a packet containing lease time, subnet mask, IP addresses, etc (DHCP OFFER)
-* Depending on which offer is accepted, the client sends back a reply broadcast letting all DHCP servers know (DHCP REQUEST)
-* The server sends an acknowledgment (DHCP ACK)
-
-Read more [here](https://linuxjourney.com/lesson/dhcp-overview)
+- TTL (время жизни) - это значение в пакете IP (интернет-протокол), которое определяет, сколько переходов или маршрутов может пройти пакет, прежде чем он будет отброшен. Каждый раз, когда маршрутизатор пересылает пакет, значение TTL уменьшается на единицу. Когда значение TTL достигает нуля, пакет отбрасывается, и отправителю отправляется сообщение ICMP (Internet Control Message Protocol), указывающее на то, что срок действия пакета истек.
+- TTL используется для предотвращения неограниченного распространения пакетов по сети, что может привести к перегрузке и снижению производительности сети.
+- Это также помогает предотвратить попадание пакетов в циклы маршрутизации, когда пакеты непрерывно перемещаются между одним и тем же набором маршрутов, так и не достигая места назначения.
+- Кроме того, TTL может использоваться для обнаружения и предотвращения атак с использованием спуфинга IP-адресов, когда злоумышленник пытается выдать себя за другое устройство в сети, используя ложный или поддельный IP-адрес. Ограничивая количество переходов, которые может пройти пакет, TTL может помочь предотвратить передачу пакетов.
 </b></details>
 
 <details>
-<summary>Can you have two DHCP servers on the same network? How does it work?</summary><br><b>
+<summary>Что такое DHCP? Как это работает?</summary><br><b>
 
-It is possible to have two DHCP servers on the same network, however, it is not recommended, and it is important to configure them carefully to prevent conflicts and configuration problems.
-- When two DHCP servers are configured on the same network, there is a risk that both servers will assign IP addresses and other network configuration settings to the same device, which can cause conflicts and connectivity issues. Additionally, if the DHCP servers are configured with different network settings or options, devices on the network may receive conflicting or inconsistent configuration settings.
-- However, in some cases, it may be necessary to have two DHCP servers on the same network, such as in large networks where one DHCP server may not be able to handle all the requests. In such cases, DHCP servers can be configured to serve different IP address ranges or different subnets, so they do not interfere with each other.
+Он расшифровывается как протокол динамической настройки хоста и распределяет IP-адреса, маски подсетей и шлюзы между хостами. Вот как это работает:
+
+* Хост при входе в сеть отправляет сообщение в поисках DHCP-сервера (DHCP DISCOVER).
+* DHCP-сервер отправляет сообщение с предложением в виде пакета, содержащего время аренды, маску подсети, IP-адреса и т.д. (DHCP-предложение)
+* В зависимости от того, какое предложение принято, клиент отправляет ответную рассылку, уведомляющую все DHCP-серверы (DHCP-ЗАПРОС).
+* Сервер отправляет подтверждение (DHCP ACK).
 </b></details>
 
 <details>
-<summary>What is SSL tunneling? How does it work?</summary><br><b>
+<summary>Можете ли вы подключить два DHCP-сервера к одной сети? Как это работает?</summary><br><b>
 
-- SSL (Secure Sockets Layer) tunneling is a technique used to establish a secure, encrypted connection between two endpoints over an insecure network, such as the Internet. The SSL tunnel is created by encapsulating the traffic within an SSL connection, which provides confidentiality, integrity, and authentication.
-
-Here's how SSL tunneling works:
-
-1. A client initiates an SSL connection to a server, which involves a handshake process to establish the SSL session.
-2. Once the SSL session is established, the client and server negotiate encryption parameters, such as the encryption algorithm and key length, then exchange digital certificates to authenticate each other.
-3. The client then sends traffic through the SSL tunnel to the server, which decrypts the traffic and forwards it to its destination.
-4. The server sends traffic back through the SSL tunnel to the client, which decrypts the traffic and forwards it to the application.
+Возможно использование двух DHCP-серверов в одной сети, однако это не рекомендуется, и важно тщательно их настроить, чтобы предотвратить конфликты и проблемы с конфигурацией.
+- Если два DHCP-сервера настроены в одной сети, существует риск того, что оба сервера назначат IP-адреса и другие параметры конфигурации сети одному и тому же устройству, что может привести к конфликтам и проблемам с подключением. Кроме того, если DHCP-серверы настроены с различными сетевыми параметрами или опциями, устройства в сети могут получать конфликтующие или несогласованные параметры конфигурации.
+- Однако в некоторых случаях может потребоваться подключение двух DHCP-серверов в одной сети, например, в крупных сетях, где один DHCP-сервер может быть не в состоянии обрабатывать все запросы. В таких случаях DHCP-серверы могут быть настроены на обслуживание разных диапазонов IP-адресов или разных подсетей, чтобы они не мешали друг другу.
 </b></details>
 
 <details>
-<summary>What is a socket? Where can you see the list of sockets in your system?</summary><br><b>
+<summary>Что такое SSL-туннелирование? Как это работает?</summary><br><b>
 
-- A socket is a software endpoint that enables two-way communication between processes over a network. Sockets provide a standardized interface for network communication, allowing applications to send and receive data across a network. To view the list of open sockets on a Linux system: 
+- Туннелирование SSL (Secure Sockets Layer) - это метод, используемый для установления безопасного зашифрованного соединения между двумя конечными точками в небезопасной сети, такой как Интернет. Туннель SSL создается путем инкапсуляции трафика в SSL-соединение, что обеспечивает конфиденциальность, целостность и аутентификацию.
+
+Вот как работает SSL-туннелирование:
+
+1. Клиент инициирует SSL-соединение с сервером, которое включает в себя процесс подтверждения связи для установления SSL-сеанса.
+2. Как только сеанс SSL установлен, клиент и сервер согласовывают параметры шифрования, такие как алгоритм шифрования и длина ключа, а затем обмениваются цифровыми сертификатами для аутентификации друг друга.
+3. Затем клиент отправляет трафик через SSL-туннель на сервер, который расшифровывает трафик и пересылает его по назначению.
+4. Сервер отправляет трафик обратно через SSL-туннель клиенту, который расшифровывает трафик и пересылает его приложению.
+</b></details>
+
+<details>
+<summary>Что такое сокет? Где вы можете просмотреть список сокетов вашей системы?</summary><br><b>
+
+- Сокет - это программная конечная точка, которая обеспечивает двустороннюю связь между процессами по сети. Сокеты предоставляют стандартизированный интерфейс для сетевого взаимодействия, позволяющий приложениям отправлять и получать данные по сети. Для просмотра списка открытых сокетов в системе Linux: 
 ***netstat -an***
-- This command displays a list of all open sockets, along with their protocol, local address, foreign address, and state.
+- Эта команда отображает список всех открытых сокетов вместе с их протоколом, локальным адресом, внешним адресом и состоянием.
 </b></details>
 
 <details>
-<summary>What is IPv6? Why should we consider using it if we have IPv4?</summary><br><b>
+<summary>Что такое IPv6? Почему мы должны рассмотреть возможность его использования, если у нас есть IPv4?</summary><br><b>
 
-- IPv6 (Internet Protocol version 6) is the latest version of the Internet Protocol (IP), which is used to identify and communicate with devices on a network. IPv6 addresses are 128-bit addresses and are expressed in hexadecimal notation, such as 2001:0db8:85a3:0000:0000:8a2e:0370:7334.
+- IPv6 (Internet Protocol версии 6) - это последняя версия интернет-протокола (IP), который используется для идентификации устройств в сети и взаимодействия с ними. Адреса IPv6 являются 128-разрядными и выражаются в шестнадцатеричной системе счисления, например, 2001:0db8:85a3:0000:0000:8a2e:0370:7334.
 
-There are several reasons why we should consider using IPv6 over IPv4:
+Есть несколько причин, по которым нам следует рассмотреть возможность использования IPv6 вместо IPv4:
 
-1. Address space: IPv4 has a limited address space, which has been exhausted in many parts of the world. IPv6 provides a much larger address space, allowing for trillions of unique IP addresses.
-2. Security: IPv6 includes built-in support for IPsec, which provides end-to-end encryption and authentication for network traffic.
-3. Performance: IPv6 includes features that can help to improve network performance, such as multicast routing, which allows a single packet to be sent to multiple destinations simultaneously.
-4. Simplified network configuration: IPv6 includes features that can simplify network configuration, such as stateless autoconfiguration, which allows devices to automatically configure their own IPv6 addresses without the need for a DHCP server.
-5. Better mobility support: IPv6 includes features that can improve mobility support, such as Mobile IPv6, which allows devices to maintain their IPv6 addresses as they move between different networks.
+1. Адресное пространство: IPv4 имеет ограниченное адресное пространство, которое было исчерпано во многих частях мира. IPv6 предоставляет гораздо большее адресное пространство, позволяя использовать триллионы уникальных IP-адресов.
+2. Безопасность: IPv6 включает встроенную поддержку IPSec, которая обеспечивает сквозное шифрование и аутентификацию сетевого трафика.
+3. Производительность: IPv6 включает в себя функции, которые могут помочь повысить производительность сети, такие как многоадресная маршрутизация, которая позволяет отправлять один пакет нескольким адресатам одновременно.
+4. Упрощенная конфигурация сети: IPv6 включает функции, которые могут упростить настройку сети, такие как автоконфигурация без учета состояния, которая позволяет устройствам автоматически настраивать свои собственные IPv6-адреса без использования DHCP-сервера.
+5. Улучшенная поддержка мобильности: IPv6 включает функции, которые могут улучшить поддержку мобильности, такие как мобильный IPv6, который позволяет устройствам сохранять свои IPv6-адреса при перемещении между различными сетями.
 </b></details>
 
 <details>
-<summary>What is VLAN?</summary><br><b>
+<summary>Что такое VLAN?</summary><br><b>
 
-- A VLAN (Virtual Local Area Network) is a logical network that groups together a set of devices on a physical network, regardless of their physical location. VLANs are created by configuring network switches to assign a specific VLAN ID to frames sent by devices connected to a specific port or group of ports on the switch.
+- VLAN (виртуальная локальная сеть) - это логическая сеть, которая объединяет набор устройств в физической сети, независимо от их физического местоположения. Сети VLAN создаются путем настройки сетевых коммутаторов таким образом, чтобы они присваивали определенный идентификатор сети VLAN кадрам, отправляемым устройствами, подключенными к определенному порту или группе портов на коммутаторе.
 </b></details>
 
 <details>
-<summary>What is MTU?</summary><br><b>
+<summary>Что такое MTU?</summary><br><b>
 	
-MTU stands for Maximum Transmission Unit. It's the size of the largest PDU (protocol Data Unit) that can be sent in a single transaction.
+MTU означает максимальную единицу передачи. Это размер самого большого PDU (блока протокольных данных), который может быть отправлен за одну транзакцию.
 </b></details>
 
 <details>
-<summary>What happens if you send a packet that is bigger than the MTU?</summary><br><b>
+<summary>Что произойдет, если вы отправите пакет, размер которого превышает MTU?</summary><br><b>
 	
-With the IPv4 protocol, the router can fragment the PDU and then send all the fragmented PDU through the transaction.
-	
-With IPv6 protocol, it issues an error to the user's computer.
+С помощью протокола IPv4 маршрутизатор может фрагментировать PDU и затем отправлять все фрагментированные PDU через транзакцию.
+ 
+При использовании протокола IPv6 он выдает ошибку компьютеру пользователя.
 </b></details>
 
 <details>
-<summary>True or False? Ping is using UDP because it doesn't care about reliable connection</summary><br><b>
+<summary>Правда это или ложь? Ping использует протокол UDP, потому что не заботится о надежности соединения
+</summary><br><b>
 
-False. Ping is actually using ICMP (Internet Control Message Protocol) which is a network protocol used to send diagnostic messages and control messages related to network communication.
+Ложь. Ping на самом деле использует ICMP (Internet Control Message Protocol), который является сетевым протоколом, используемым для отправки диагностических сообщений и управляющих сообщений, связанных с сетевым взаимодействием.
 </b></details>
 
 <details>
-<summary>What is SDN?</summary><br><b>
+<summary>Что такое SDN?</summary><br><b>
 
-- SDN stands for Software-Defined Networking. It is an approach to network management that emphasizes the centralization of network control, enabling administrators to manage network behavior through a software abstraction.
-- In a traditional network, network devices such as routers, switches, and firewalls are configured and managed individually, using specialized software or command-line interfaces. In contrast, SDN separates the network control plane from the data plane, allowing administrators to manage network behavior through a centralized software controller.
+- SDN расшифровывается как программно-определяемая сеть. Это подход к управлению сетью, который делает упор на централизацию сетевого контроля, позволяя администраторам управлять поведением сети с помощью программной абстракции.
+- В традиционной сети сетевые устройства, такие как маршрутизаторы, коммутаторы и брандмауэры, настраиваются и управляются индивидуально с помощью специализированного программного обеспечения или интерфейсов командной строки. В отличие от этого, SDN отделяет уровень управления сетью от уровня передачи данных, позволяя администраторам управлять поведением сети с помощью централизованного программного контроллера.
 </b></details>
 
 <details>
-<summary>What is ICMP? What is it used for?</summary><br><b>
+<summary>Что такое ICMP? Для чего он используется?</summary><br><b>
 
-- ICMP stands for Internet Control Message Protocol. It is a protocol used for diagnostic and control purposes in IP networks. It is a part of the Internet Protocol suite, operating at the network layer.
+- ICMP расшифровывается как Internet Control Message Protocol. Это протокол, используемый для диагностики и контроля в IP-сетях. Он является частью набора интернет-протоколов, работающих на сетевом уровне.
 
-ICMP messages are used for a variety of purposes, including:
-1. Error reporting: ICMP messages are used to report errors that occur in the network, such as a packet that could not be delivered to its destination.
-2. Ping: ICMP is used to send ping messages, which are used to test whether a host or network is reachable and to measure the round-trip time for packets.
-3. Path MTU discovery: ICMP is used to discover the Maximum Transmission Unit (MTU) of a path, which is the largest packet size that can be transmitted without fragmentation.
-4. Traceroute: ICMP is used by the traceroute utility to trace the path that packets take through the network.
-5. Router discovery: ICMP is used to discover the routers in a network.
+ICMP-сообщения используются для различных целей, включая:
+1. Сообщения об ошибках: ICMP-сообщения используются для сообщения об ошибках, возникающих в сети, например, о пакете, который не удалось доставить по назначению.
+2. Ping: протокол ICMP используется для отправки сообщений ping, которые используются для проверки доступности хоста или сети и измерения времени прохождения пакетов в оба конца.
+3. Обнаружение MTU пути: протокол ICMP используется для определения максимальной единицы передачи (MTU) пути, которая является наибольшим размером пакета, который может быть передан без фрагментации.
+4. Traceroute: ICMP используется утилитой traceroute для отслеживания пути, по которому пакеты проходят через сеть.
+5. Обнаружение маршрутизатора: ICMP используется для обнаружения маршрутизаторов в сети.
 </b></details>
 
 <details>
-<summary>What is NAT? How does it work?</summary><br><b>
+<summary>Что такое NAT? Как это работает?</summary><br><b>
 
-NAT stands for Network Address Translation. It’s a way to map multiple local private addresses to a public one before transferring the information. Organizations that want multiple devices to employ a single IP address use NAT, as do most home routers.
-For example, your computer's private IP could be 192.168.1.100, but your router maps the traffic to its public IP (e.g. 1.1.1.1). Any device on the internet would see the traffic coming from your public IP (1.1.1.1) instead of your private IP (192.168.1.100).
+NAT расшифровывается как преобразование сетевых адресов. Это способ сопоставления нескольких локальных частных адресов с общедоступным перед передачей информации. Организации, которые хотят, чтобы несколько устройств использовали один IP-адрес, используют NAT, как и большинство домашних маршрутизаторов.
+Например, частный IP-адрес вашего компьютера может быть 192.168.1.100, но ваш маршрутизатор сопоставляет трафик со своим общедоступным IP-адресом (например, 1.1.1.1). Любое устройство в Интернете будет видеть трафик, поступающий с вашего общедоступного IP-адреса (1.1.1.1), а не с вашего частного IP-адреса (192.168.1.100).
 </b></details>
 
 <details>
-<summary>Which port number is used in each of the following protocols?:
+<summary>Какой номер порта используется в каждом из следующих протоколов?:
 
   * SSH
   * SMTP
@@ -497,25 +489,24 @@ For example, your computer's private IP could be 192.168.1.100, but your router 
 </b></details>
 
 <details>
-<summary>Which factors affect network performance?</summary><br><b>
+<summary>Какие факторы влияют на производительность сети?</summary><br><b>
 
-Several factors can affect network performance, including:
+На производительность сети могут влиять несколько факторов, в том числе:
 
-1. Bandwidth: The available bandwidth of a network connection can significantly impact its performance. Networks with limited bandwidth can experience slow data transfer rates, high latency, and poor responsiveness.
-2. Latency: Latency refers to the delay that occurs when data is transmitted from one point in a network to another. High latency can result in slow network performance, especially for real-time applications like video conferencing and online gaming.
-3. Network congestion: When too many devices are using a network at the same time, network congestion can occur, leading to slow data transfer rates and poor network performance.
-4. Packet loss: Packet loss occurs when packets of data are dropped during transmission. This can result in slower network speeds and lower overall network performance.
-5. Network topology: The physical layout of a network, including the placement of switches, routers, and other network devices, can impact network performance.
-6. Network protocol: Different network protocols have different performance characteristics, which can impact network performance. For example, TCP is a reliable protocol that can guarantee the delivery of data, but it can also result in slower performance due to the overhead required for error checking and retransmission.
-7. Network security: Security measures such as firewalls and encryption can impact network performance, especially if they require significant processing power or introduce additional latency.
-8. Distance: The physical distance between devices on a network can impact network performance, especially for wireless networks where signal strength and interference can affect connectivity and data transfer rates.
+1. Пропускная способность: Доступная пропускная способность сетевого соединения может существенно повлиять на его производительность. В сетях с ограниченной пропускной способностью скорость передачи данных может быть низкой, а время ожидания - высоким.
+2. Задержка: Задержка - это задержка, возникающая при передаче данных из одной точки сети в другую. Высокая задержка может привести к снижению производительности сети, особенно для приложений реального времени, таких как видеоконференции и онлайн-игры.
+3. Перегрузка сети: когда слишком много устройств одновременно используют сеть, может возникнуть перегрузка сети, что приводит к снижению скорости передачи данных и снижению производительности сети.
+4. Потеря пакетов: потеря пакетов происходит, когда пакеты данных отбрасываются во время передачи. Это может привести к снижению скорости работы сети и снижению общей производительности сети.
+5. Топология сети: Физическая схема сети, включая расположение коммутаторов, маршрутизаторов и других сетевых устройств, может влиять на производительность сети.
+6. Сетевой протокол: Различные сетевые протоколы имеют разные характеристики производительности, что может влиять на производительность сети. Например, TCP - это надежный протокол, который может гарантировать доставку данных, но он также может привести к снижению производительности из-за накладных расходов, необходимых для проверки ошибок и повторной передачи.
+7. Сетевая безопасность: Такие меры безопасности, как брандмауэры и шифрование, могут повлиять на производительность сети, особенно если они требуют значительных вычислительных мощностей или приводят к дополнительной задержке.
+8. Расстояние: Физическое расстояние между устройствами в сети может влиять на производительность сети, особенно в беспроводных сетях, где уровень сигнала и помехи могут влиять на подключение и скорость передачи данных.
 </b></details>
 
 <details>
-<summary>What is APIPA?</summary><br><b>
+<summary>Что такое APIPA?</summary><br><b>
 
-APIPA is a set of IP addresses that devices are allocated
-when the main DHCP server is not reachable
+APIPA - это набор IP-адресов, которые выделяются устройствам, когда основной DHCP-сервер недоступен
 
 </b></details>
 
