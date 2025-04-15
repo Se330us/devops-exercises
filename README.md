@@ -172,87 +172,87 @@ MAC-адрес - это уникальный идентификационный 
 </b></details>
 
 <details>
-<summary>Что такое частный IP-адрес? В каких сценариях/системах его следует использовать?</summary><br><b>
-Частные IP-адреса назначаются хостам в одной сети для связи друг с другом. Как следует из названия "частные", устройства, которым назначены частные IP-адреса, не могут быть доступны ни из какой внешней сети. Например, если я живу в хостеле и хочу, чтобы мои товарищи по хостелу подключились к игровому серверу, который я разместил, я попрошу их присоединиться через личный IP-адрес моего сервера, поскольку сеть является локальной для хостела.
+<summary>Что такое частный(он же локальный) IP-адрес? В каких сценариях/системах его следует использовать?</summary><br><b>
+Частные(локальные) IP-адреса назначаются хостам в одной сети для связи друг с другом. Как следует из названия "частные"(локальные), устройства, которым назначены частные IP-адреса, не могут быть доступны ни из какой внешней сети. Например, если я живу в хостеле и хочу, чтобы мои товарищи по хостелу подключились к игровому серверу, который я разместил, я попрошу их присоединиться через личный IP-адрес моего сервера, поскольку сеть является локальной для хостела.
 </b></details>
 
 <details>
-<summary>What is a public IP address? In which scenarios/system designs, one should use it?</summary><br><b>
-A public IP address is a public-facing IP address. In the event that you were hosting a game server that you want your friends to join, you will give your friends your public IP address to allow their computers to identify and locate your network and server in order for the connection to take place. One time that you would not need to use a public-facing IP address is in the event that you were playing with friends who were connected to the same network as you, in that case, you would use a private IP address. In order for someone to be able to connect to your server that is located internally, you will have to set up a port forward to tell your router to allow traffic from the public domain into your network and vice versa.
+<summary>Что такое публичный(динамический) IP-адрес? В каких сценариях/системах его следует использовать?</summary><br><b>
+Публичный(он же динамический, "серый") IP-адрес является общедоступным IP-адресом. В случае, если у вас размещен игровой сервер, к которому вы хотите подключить своих друзей, вы предоставите своим друзьям свой публичный IP-адрес, чтобы их компьютеры могли идентифицировать вашу сеть и сервер и найти их, чтобы установить соединение. Единственный раз, когда вам не нужно было бы использовать общедоступный IP-адрес, - это когда вы играли с друзьями, подключенными к той же сети, что и вы, в этом случае вы бы использовали реальный или локальный IP-адрес. Для того чтобы кто-то мог подключиться к вашему внутреннему серверу, вам нужно будет настроить переадресацию портов, чтобы ваш маршрутизатор разрешал трафик из общедоступного домена в вашу сеть и наоборот.
 </b></details>
 
 <details>
-<summary>Explain the OSI model. What layers there are? What each layer is responsible for?</summary><br><b>
+<summary>Объясните модель OSI. Какие существуют уровни? За что отвечает каждый уровень?</summary><br><b>
 
-- Application: user end (HTTP is here)
-- Presentation: establishes context between application-layer entities (Encryption is here)
-- Session: establishes, manages, and terminates the connections
-- Transport: transfers variable-length data sequences from a source to a destination host (TCP & UDP are here)
-- Network: transfers datagrams from one network to another (IP is here)
-- Data link: provides a link between two directly connected nodes (MAC is here)
-- Physical: the electrical and physical spec of the data connection (Bits are here)
+- Приложение: пользовательский интерфейс (HTTP тут)
+- Представление: устанавливает контекст между объектами прикладного уровня (шифрование тут)
+- Сеанс: устанавливает соединения, управляет ими и завершает их.
+- Транспорт: передает последовательности данных переменной длины от источника к узлу назначения (здесь указаны TCP и UDP).
+- Сеть: передает дейтаграммы(самодостаточные сообщения,чья доставка, время и порядок доставки не гарантируются) из одной сети в другую (здесь указан IP).
+- Канал передачи данных: обеспечивает связь между двумя непосредственно подключенными узлами (здесь указан MAC).
+- Физический: электрические и физические характеристики подключения для передачи данных (здесь приведены краткие сведения).
 
-You can read more about the OSI model in [penguintutor.com](http://www.penguintutor.com/linux/basic-network-reference)
+Вы можете прочитать больше о модели OSI в [penguintutor.com](http://www.penguintutor.com/linux/basic-network-reference)
 </b></details>
 
 <details>
-<summary>For each of the following determines to which OSI layer it belongs:
+<summary>Для каждого из следующих параметров определяется, к какому уровню OSI он относится:
 
-  * Error correction
-  * Packets routing
-  * Cables and electrical signals
-  * MAC address
-  * IP address
-  * Terminate connections
-  * 3 way handshake</summary><br><b>
-  * Error correction - Data link
-  * Packets routing - Network
-  * Cables and electrical signals - Physical
-  * MAC address - Data link
-  * IP address - Network
-  * Terminate connections - Session
-  * 3-way handshake - Transport
+ * Исправление ошибок
+ * Маршрутизация пакетов
+ * Кабели и электрические сигналы
+ * MAC-адрес
+ * IP-адрес
+ * Завершение соединения
+ * Трехстороннее подтверждение связи
+ * Исправление ошибок - Канал передачи данных
+ * Маршрутизация пакетов - Сеть
+ * Кабели и электрические сигналы - Физические
+ * MAC-адрес - канал передачи данных
+ * IP-адрес - Сеть
+ * Завершение соединения - Сеанс
+ * Трехстороннее подтверждение связи - Транспорт
 </b></details>
 
 <details>
-<summary>What delivery schemes are you familiar with?</summary><br><b>
+<summary>С какими схемами доставки вы знакомы?</summary><br><b>
 
-Unicast: One-to-one communication where there is one sender and one receiver.
+Односторонняя: передача данных один на один, при которой есть один отправитель и один получатель.
 
-Broadcast: Sending a message to everyone in the network. The address ff:ff:ff:ff:ff:ff is used for broadcasting.
-           Two common protocols which use broadcast are ARP and DHCP.
+Широковещательная: Отправка сообщения всем пользователям сети. Для широковещательной рассылки используется адрес ff:ff:ff:ff:ff:ff:ff.
+ Двумя распространенными протоколами, использующими широковещательную рассылку, являются ARP и DHCP.
 
-Multicast: Sending a message to a group of subscribers. It can be one-to-many or many-to-many.
+Многосторонняя рассылка: отправка сообщения группе абонентов. Она может быть как "один ко многим", так и "многие ко многим".
 </b></details>
 
 <details>
-<summary>What is CSMA/CD? Is it used in modern ethernet networks?</summary><br><b>
+<summary>Что такое CSMA/CD? Используется ли он в современных сетях Ethernet?</summary><br><b>
 
-CSMA/CD stands for Carrier Sense Multiple Access / Collision Detection.
-Its primary focus is to manage access to a shared medium/bus where only one host can transmit at a given point in time.
+CSMA/CD расшифровывается как Carrier Sense Multiple Access / обнаружение коллизий.
+Его основная задача - управлять доступом к общему носителю /шине, где только один хост может передавать данные в данный момент времени.
 
-CSMA/CD algorithm:
+Алгоритм CSMA/CD:
 
-1. Before sending a frame, it checks whether another host is already transmitting a frame.
-2. If no one is transmitting, it starts transmitting the frame.
-3. If two hosts transmit at the same time, we have a collision.
-4. Both hosts stop sending the frame and they send everyone a 'jam signal' notifying everyone that a collision occurred
-5. They are waiting for a random time before sending it again
-6. Once each host waited for a random time, they try to send the frame again and so the cycle starts again
+1. Перед отправкой кадра он проверяет, не передает ли его уже другой хост.
+2. Если никто не передает, он начинает передачу кадра.
+3. Если два хоста передают данные одновременно, возникает коллизия.
+4. Оба хоста прекращают отправку кадра и отправляют всем "сигнал о замятии", уведомляющий всех о том, что произошла коллизия
+5. Они ожидают случайное время, прежде чем отправить его снова
+6. После того, как каждый хост подождал произвольное время, он пытается отправить кадр снова, и цикл начинается снова
 </b></details>
 
 <details>
-<summary>Describe the following network devices and the difference between them:
+<summary>Опишите следующие сетевые устройства и разницу между ними:
 
-  * router
-  * switch
-  * hub</summary><br><b>
+ * маршрутизатор
+ * коммутатор
+ * хаб</summary><br><b>
 
-A router, switch, and hub are all network devices used to connect devices in a local area network (LAN). However, each device operates differently and has its specific use cases. Here is a brief description of each device and the differences between them:
+Маршрутизатор, коммутатор и концентратор - это сетевые устройства, используемые для подключения устройств в локальной сети (LAN). Однако каждое устройство работает по-разному и имеет свои особенности использования. Ниже приводится краткое описание каждого устройства и различия между ними:
 
-1. Router: a network device that connects multiple network segments together. It operates at the network layer (Layer 3) of the OSI model and uses routing protocols to direct data between networks. Routers use IP addresses to identify devices and route data packets to the correct destination.
-2. Switch: a network device that connects multiple devices on a LAN. It operates at the data link layer (Layer 2) of the OSI model and uses MAC addresses to identify devices and direct data packets to the correct destination. Switches allow devices on the same network to communicate with each other more efficiently and can prevent data collisions that can occur when multiple devices send data simultaneously.
-3. Hub: a network device that connects multiple devices through a single cable and is used to connect multiple devices without segmenting a network. However, unlike a switch, it operates at the physical layer (Layer 1) of the OSI model and simply broadcasts data packets to all devices connected to it, regardless of whether the device is the intended recipient or not. This means that data collisions can occur, and the network's efficiency can suffer as a result. Hubs are generally not used in modern network setups, as switches are more efficient and provide better network performance.
+1. Маршрутизатор: сетевое устройство, соединяющее несколько сегментов сети вместе. Оно работает на сетевом уровне (Layer 3) модели OSI и использует протоколы маршрутизации для передачи данных между сетями. Маршрутизаторы используют IP-адреса для идентификации устройств и направления пакетов данных в нужное место назначения.
+2. Коммутатор: сетевое устройство, соединяющее несколько устройств в локальной сети. Оно работает на канальном уровне (уровень 2) модели OSI и использует MAC-адреса для идентификации устройств и направления пакетов данных в нужное место назначения. Коммутаторы позволяют устройствам в одной сети более эффективно взаимодействовать друг с другом и могут предотвращать конфликты данных, которые могут возникнуть, когда несколько устройств отправляют данные одновременно.
+3. Хаб: сетевое устройство, которое соединяет несколько устройств с помощью одного кабеля и используется для подключения нескольких устройств без сегментирования сети. Однако, в отличие от коммутатора, он работает на физическом уровне (Layer 1) модели OSI и просто передает пакеты данных всем подключенным к нему устройствам, независимо от того, является ли это устройство предполагаемым получателем или нет. Это означает, что могут возникать конфликты данных, и в результате может пострадать эффективность сети. Хаб, как правило, не используются в современных сетевых установках, поскольку коммутаторы более эффективны и обеспечивают лучшую производительность сети.
 </b></details>
 
 <details>
