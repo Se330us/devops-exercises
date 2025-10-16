@@ -805,107 +805,97 @@ VTEP использует VNI для определения, в какую ви�
 Чтобы предотвратить перегрузку сети, важно отслеживать использование сети и внедрять стратегии по ограничению или управлению спросом.</b></details>
 
 <details>
-<summary>Что вы можете рассказать мне о формате пакетов UDP? А как насчет формата пакетов TCP? Чем он отличается?</summary><br><b>
+<summary>Что такое алгоритм экспоненциального возврата? Где он применяется?</summary><br><b>
+✅ Алгоритм экспоненциального возврата (exponential backoff) — это стратегия для управления повторами запросов, при которой задержка между попытками увеличивается экспоненциально. Цель — избежать перегрузки сервера повторными запросами и позволить системе восстанавливаться от временных сбоев.
 </b></details>
 
 <details>
-<summary>What is the exponential backoff algorithm? Where is it used?</summary><br><b>
+<summary>Приведите примеры протоколов, найденных на прикладном уровне</summary><br><b>
+
+* HTTP (Hypertext Transfer Protocol). Протокол передачи гипертекста, используемый для обмена информацией между веб-браузерами и веб-серверами.
+* SMTP (Simple Mail Transfer Protocol). Протокол передачи электронной почты, используемый для отправки сообщений от почтового клиента к почтовому серверу, а также между почтовыми серверами.
+* FTP (File Transfer Protocol). Протокол передачи файлов, используемый для обмена файлами между компьютерами в сети.
+* DNS (Domain Name System). Протокол, основная функция которого — преобразование доменных имён в IP-адреса.
+* SSH (Secure Shell). Протокол, обеспечивающий безопасный удалённый доступ к компьютерным системам.
 </b></details>
 
 <details>
-<summary>Using Hamming code, what would be the code word for the following data word 100111010001101?</summary><br><b>
+<summary>Приведите примеры протоколов, найденных на сетевом уровне</summary><br><b>
 
-00110011110100011101
+* IP (Internet Protocol). Используется для передачи пакетов с одного компьютера на другой.
+* ICMP (Internet Control Message Protocol). Протокол управляющих сообщений Интернета, используется для получения сообщений об ошибках и отладочной информации.
+* ARP. Протокол разрешения адреса.
 </b></details>
 
 <details>
-<summary>Give examples of protocols found in the application layer</summary><br><b>
+<summary>Что такое HSTS?</summary><br><b>
+HSTS (HTTP Strict Transport Security) — механизм веб-безопасности, который принудительно активирует защищённое соединение через протокол HTTPS. Цель — защитить сайты и пользователей от распространённых киберугроз, таких как атаки типа «человек посередине» (MITM), отмена SSL и перехват файлов cookie. 
+</b></details>
 
-* Hypertext Transfer Protocol (HTTP) - used for the webpages on the internet
-* Simple Mail Transfer Protocol (SMTP) - email transmission
-* Telecommunications Network - (TELNET) - terminal emulation to allow a client access to a telnet server
-* File Transfer Protocol (FTP) - facilitates the transfer of files between any two machines
-* Domain Name System (DNS) - domain name translation
-* Dynamic Host Configuration Protocol (DHCP) - allocates IP addresses, subnet masks, and gateways to hosts
-* Simple Network Management Protocol (SNMP) - gathers data on devices on the network
+#### Сети - Другое
+
+<details>
+<summary>Что такое Интернет? Это тоже самое, что Всемирная паутина?</summary><br><b>
+
+Интернет и Всемирная паутина (World Wide Web, WWW) не являются синонимами. 
+Интернет — это глобальная система объединённых между собой компьютерных сетей, использующих единые правила обмена данными (протоколы) для обеспечения взаимодействия устройств по всему миру. 
+Всемирная паутина — это система гипертекстовых документов, связанных между собой ссылками и доступных посредством браузеров, то есть только один из сервисов, реализуемых на платформе интернета.
 </b></details>
 
 <details>
-<summary>Give examples of protocols found in the Network Layer</summary><br><b>
+<summary>Что такое ISP?</summary><br><b>
 
-* Internet Protocol (IP) - assists in routing packets from one machine to another
-* Internet Control Message Protocol (ICMP) - lets one know what is going such as error messages and debugging information
+ISP (Internet Service Provider, «провайдер интернет-услуг») — компания или организация, предоставляющая пользователям доступ к интернету и связанным с ним услугам. Эти услуги могут включать:
+* Подключение к интернету через различные технологии (DSL, кабельное соединение, оптоволокно, спутник и мобильная связь);
+* Веб-хостинг;
+* Электронную почту;
+* Доменные имена.
 </b></details>
 
-<details>
-<summary>What is HSTS?</summary><br><b>
-HTTP Strict Transport Security is a web server directive that informs user agents and web browsers how to handle its connection through a response header sent at the very beginning and back to the browser. This forces connections over HTTPS encryption, disregarding any script's call to load any resource in that domain over HTTP.
+## Операционные системы
 
-Read more [here](https://www.globalsign.com/en/blog/what-is-hsts-and-how-do-i-use-it#:~:text=HTTP%20Strict%20Transport%20Security%20(HSTS,and%20back%20to%20the%20browser.)
-</b></details>
-
-#### Network - Misc
-
-<details>
-<summary>What is the Internet? Is it the same as the World Wide Web?</summary><br><b>
-
-The internet refers to a network of networks, transferring huge amounts of data around the globe.<br>
-The World Wide Web is an application running on millions of servers, on top of the internet, accessed through what is known as the web browser
-</b></details>
-
-<details>
-<summary>What is the ISP?</summary><br><b>
-
-ISP (Internet Service Provider) is the local internet company provider.
-</b></details>
-
-## Operating System
-
-### Operating System Exercises
+### Упражнения по операционным системам
 
 |Name|Topic|Objective & Instructions|Solution|Comments|
 |--------|--------|------|----|----|
 |Fork 101|Fork|[Link](topics/os/fork_101.md)|[Link](topics/os/solutions/fork_101_solution.md)
 |Fork 102|Fork|[Link](topics/os/fork_102.md)|[Link](topics/os/solutions/fork_102_solution.md)
 
-### Operating System - Self Assessment
+### Операционные системы - Самооценка
 
 <details>
-<summary>What is an operating system?</summary><br><b>
+<summary>Что такое операционная система?</summary><br><b>
 
-From the book "Operating Systems: Three Easy Pieces":
+Операционная система (ОС, OS, operating system) — это набор программ, обеспечивающих работу компьютера или другого устройства и взаимодействие с ним пользователя. ОС выступает в роли посредника между пользователем и аппаратным обеспечением, распределяет ресурсы устройства и контролирует действия программ. </b></details>
 
-"responsible for making it easy to run programs (even allowing you to seemingly run many at the same time), allowing programs to share memory, enabling programs to interact with devices, and other fun stuff like that".
-</b></details>
-
-#### Operating System - Process
+#### Операционная система — Процесс
 
 <details>
-<summary>Can you explain what is a process?</summary><br><b>
+<summary>Можете ли вы объяснить, что такое процесс?</summary><br><b>
 
-A process is a running program. A program is one or more instructions and the program (or process) is executed by the operating system.
+Процесс - это запущенная программа. Программа - это одна или несколько инструкций, и программа (или процесс), которые выполняются операционной системой.
 </b></details>
 
 <details>
-<summary>If you had to design an API for processes in an operating system, what would this API look like?</summary><br><b>
+<summary>Если бы вам нужно было разработать API для процессов в операционной системе, как бы выглядел этот API?</summary><br><b>
 
-It would support the following:
+Это выглядело бы следующим образом:
 
-* Create - allow to create new processes
-* Delete - allow to remove/destroy processes
-* State - allow to check the state of the process, whether it's running, stopped, waiting, etc.
-* Stop - allow to stop a running process
+* Создание - позволяет создавать процессы
+* Удаление - позволяет удалять или уничтожать процессы
+* Состояние - позволяет проверить состояние процесса по типу выполняется, остановлено, ожидание и т.д.
+* Остановка - позволяет остановить запущенный процесс.
 </b></details>
 
 <details>
-<summary>How a process is created?</summary><br><b>
+<summary>Как создается процесс?</summary><br><b>
 
-* The OS is reading program's code and any additional relevant data
-* Program's code is loaded into the memory or more specifically, into the address space of the process.
-* Memory is allocated for program's stack (aka run-time stack). The stack also initialized by the OS with data like argv, argc and parameters to main()
-* Memory is allocated for program's heap which is required for dynamically allocated data like the data structures linked lists and hash tables
-* I/O initialization tasks are performed, like in Unix/Linux based systems, where each process has 3 file descriptors (input, output and error)
-* OS is running the program, starting from main()
+* Операционная система считывает код программы и прочие дополнительные релевантные данные
+* Программный код загружается в память или, более конкретно, в адресное пространство процесса.
+* Память выделяется для стека программы (он же стек времени выполнения). Стек также инициализируется операционной системой такими данными, как argv, argc и параметрами для main()
+* Память выделяется для кучи программы, которая требуется для динамически размещаемых данных, таких как структуры данных, связанные списки и хэш-таблицы
+* Задачи инициализации ввода-вывода выполняются, как в системах на базе Unix/Linux, где каждый процесс имеет 3 файловых дескриптора (input, output and error).
+* Операционная система запускает программу, начиная с main()
 </b></details>
 
 <details>
