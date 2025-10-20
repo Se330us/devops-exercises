@@ -899,69 +899,62 @@ ISP (Internet Service Provider, «провайдер интернет-услуг
 </b></details>
 
 <details>
-<summary>True or False? The loading of the program into the memory is done eagerly (all at once)</summary><br><b>
+<summary>Правда или ложь? Загрузка программы в память происходит «вся сразу» (вся сразу).</summary><br><b>
 
-False. It was true in the past but today's operating systems perform lazy loading, which means only the relevant pieces required for the process to run are loaded first.
+Ложь. Раньше это было верно, но современные операционные системы выполняют ленивую загрузку, то есть сначала загружаются только те компоненты, которые необходимы для выполнения процесса.
 </b></details>
 
 <details>
-<summary>What are different states of a process?</summary><br><b>
+<summary>Каковы бывают состояния процесса?</summary><br><b>
 
-* Running - it's executing instructions
-* Ready - it's ready to run, but for different reasons it's on hold
-* Blocked - it's waiting for some operation to complete, for example I/O disk request
+* Работает — выполняет инструкции.
+* Готово — готово к запуску, но по разным причинам приостановлено.
+* Заблокировано — ожидает завершения какой-либо операции, например, запроса на ввод-вывод на диск.
 </b></details>
 
 <details>
-<summary>What are some reasons for a process to become blocked?</summary><br><b>
+<summary>По каким причинамм процесс может быть заблокирован?</summary><br><b>
 
-  - I/O operations (e.g. Reading from a disk)
-  - Waiting for a packet from a network
+  - I/O операции (Например, чтение с диска)
+  - Ожидание пакета данных из сети
 </b></details>
 
 <details>
-<summary>What is Inter Process Communication (IPC)?</summary><br><b>
+<summary>Что такое межпроцессное взаимодействие (IPC)?</summary><br><b>
 
-Inter-process communication (IPC) refers to the mechanisms provided by an operating system that allow processes to manage shared data.
+Межпроцессное взаимодействие (IPC) относится к механизмам, предоставляемым операционной системой, которые позволяют процессам управлять общими данными.
 </b></details>
 
 <details>
-<summary>What is "time sharing"?</summary><br><b>
+<summary>Что такое «разделение времени»?</summary><br><b>
 
-Even when using a system with one physical CPU, it's possible to allow multiple users to work on it and run programs. This is possible with time sharing, where computing resources are shared in a way it seems to the user, the system has multiple CPUs, but in fact it's simply one CPU shared by applying multiprogramming and multi-tasking.
+Даже при использовании системы с одним физическим процессором можно разрешить нескольким пользователям работать на ней и запускать программы. Это возможно благодаря разделению времени, когда вычислительные ресурсы распределяются таким образом, что пользователю кажется, будто в системе несколько процессоров, но на самом деле это просто один процессор, используемый совместно благодаря многозадачности и многопрограммированию.
 </b></details>
 
 <details>
-<summary>What is "space sharing"?</summary><br><b>
+<summary>Что такое «совместное использование пространства»?</summary><br><b>
 
-Somewhat the opposite of time sharing. While in time sharing a resource is used for a while by one entity and then the same resource can be used by another resource, in space sharing the space is shared by multiple entities but in a way where it's not being transferred between them.<br>
-It's used by one entity, until this entity decides to get rid of it. Take for example storage. In storage, a file is yours, until you decide to delete it.
+В некотором смысле это противоположность разделению времени. При разделении времени ресурс некоторое время используется одной сущностью, а затем тот же ресурс может быть использован другой сущностью, тогда как при разделении пространства пространство используется несколькими сущностями, но таким образом, что оно не передается между ними.<br>
+Оно используется одной сущностью, пока эта сущность не решит от него избавиться. Возьмем, к примеру, хранилище. В хранилище файл принадлежит вам, пока вы не решите его удалить.
 </b></details>
 
 <details>
-<summary>What component determines which process runs at a given moment in time?</summary><br><b>
+<summary>Какой компонент определяет, какой процесс выполняется в данный момент времени?</summary><br><b>
 
-CPU scheduler
+Планировщик CPU
 </b></details>
 
-#### Operating System - Memory
+#### Операционные системы - Память
 
 <details>
-<summary>What is "virtual memory" and what purpose does serve?</summary><br><b>
+<summary>Что такое «виртуальная память» и для чего она нужна?</summary><br><b>
 
-Virtual memory combines your computer's RAM with temporary space on your hard disk. When RAM runs low, virtual memory helps to move data from RAM to a space called a paging file. Moving data to paging file can free up the RAM, so your computer can complete its work. In general, the more RAM your computer has, the faster the programs run.
-https://www.minitool.com/lib/virtual-memory.html
-</b></details>
-
-<details>
-<summary>What is demand paging?</summary><br><b>
-
-Demand paging is a memory management technique where pages are loaded into physical memory only when accessed by a process. It optimizes memory usage by loading pages on demand, reducing startup latency and space overhead. However, it introduces some latency when accessing pages for the first time. Overall, it’s a cost-effective approach for managing memory resources in operating systems. 
+Виртуальная память объединяет оперативную память компьютера с временным пространством на жёстком диске. Когда оперативная память заканчивается, виртуальная память помогает переместить данные из оперативной памяти в пространство, называемое файлом подкачки. Перемещение данных в файл подкачки освобождает оперативную память, позволяя компьютеру выполнять свою работу. Как правило, чем больше оперативной памяти на компьютере, тем быстрее работают программы.
 </b></details>
 
 <details>
-<summary>What is copy-on-write?</summary><br><b>
-Copy-on-write (COW) is a resource management concept, with the goal to reduce unnecessary copying of information. It is a concept, which is implemented for instance within the POSIX fork syscall, which creates a duplicate process of the calling process.
+<summary>Что такое копирование при записи (COW)?</summary><br><b>
+Копирование при записи (COW) - это концепция управления ресурсами, целью которой является сокращение ненужного копирования информации. Это концепция, которая реализована, например, в системном вызове POSIX fork, который создает дублирующий процесс вызывающего процесса.
 
 The idea:
 1. If resources are shared between 2 or more entities (for example shared memory segments between 2 processes), the resources don't need to be copied for every entity, but rather every entity has a READ operation access permission on the shared resource. (the shared segments are marked as read-only) 
