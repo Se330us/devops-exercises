@@ -42,7 +42,7 @@
   </tr>
 
   <tr>
-      <td align="center"><a href="#operating-system"><img src="images/os.png" width="75px;" height="75px;" alt="Операционные системы"/><br /><b>Операционные Системы</b></a></td>
+      <td align="center"><a href="#Операционные-системы"><img src="images/os.png" width="75px;" height="75px;" alt="Операционные системы"/><br /><b>Операционные Системы</b></a></td>
       <td align="center"><a href="topics/linux/README.md"><img src="images/logos/linux.png" width="75px;" height="75px;" alt="Linux"/><br /><b>Linux</b></a></td>
       <td align="center"><a href="#virtualization"><img src="images/virtualization.png" width="75px;" height="75px;" alt="Виртуализация"/><br /><b>Виртуализация</b></a></td>
       <td align="center"><a href="topics/dns/README.md"><img src="images/dns.png" width="75px;" height="75px;" alt="DNS"/><br /><b>DNS</b></a></td>
@@ -852,7 +852,7 @@ ISP (Internet Service Provider, «провайдер интернет-услуг
 * Доменные имена.
 </b></details>
 
-## Операционные системы
+## Операционные-системы
 
 ### Упражнения по операционным системам
 
